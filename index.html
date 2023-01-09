@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/5e6622d446.js" crossorigin="anonymous"></script>
     <style>
         html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -71,7 +72,10 @@ html,body{
 }
 .container .left-column{
     flex: 1;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    margin-bottom: 25px;
 }
+
 .container .right-column{
     flex: 2;
     display: flex;
@@ -79,19 +83,56 @@ html,body{
 }
 .right-top{
     flex: 1;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    margin-bottom: 15px;
+    margin-left: 10px;
 }
 .right-bot{
     flex: 1;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    margin-left: 10px;
 }
 .footer{
     height: 130px;
     background-color: #009688!important;
+}
+.left-column .image img{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+.left-column .image h2{
+    font-size: 24px;
+    font-weight: 500;
+    transform: translate(15px,-40px);
+    color: #009688;
+    animation-name: colors;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+.context{
+    margin: 0 10px;
+}
+@keyframes colors {
+    0% {color:#009688 ;}
+    25%{color: red;}
+    50%{color: blue;}
+    75%{color: aqua;}
+    100%{color: darkgoldenrod;}
 }
     </style>
 </head>
 <body>
     <div class="container">
        <div class="left-column">
+        <div class="image">
+            <img src="child.jpeg" alt="">
+            <h2>Hasan Alp Sarı</h2>
+        </div>
+        <div class="context">
+            <i class="fa-solid fa-briefcase"></i>
+            <span>İnşaat Mühendisi</span>
+        </div>
        </div>
        <div class="right-column">
         <div class="right-top"></div>
